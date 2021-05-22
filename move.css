@@ -2,10 +2,12 @@
   font-family:'Lato';
 }
 
-body {
+
+div {
   display:flex;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
+
 }
 
 .scene {
@@ -40,7 +42,7 @@ body {
 }
 
 .square.y-axis {
-  animation: y-axis-animation 10s ease-in-out 0s infinite alternate;
+  animation: y-axis-animation 7s ease-in-out 0s infinite alternate;
     animation-play-state: running;     
 }
 
@@ -59,22 +61,22 @@ body {
 
 
 @keyframes x-axis-animation {
-  from {transform: rotateX(20deg)}
-  to {transform: rotateX(-20deg)}
+  from {transform: rotateX(10deg)}
+  to {transform: rotateX(-10deg)}
     from {background-color: violet;}
   to {background-color: light-blue;}
 }
 
 @keyframes y-axis-animation {
-  from {transform: rotateY(20deg)}
-  to {transform: rotateY(-20deg)}
+  from {transform: rotateY(10deg)}
+  to {transform: rotateY(-10deg)}
     from {background-color: yellow;}
   to {background-color: black;}
 }
 
 @keyframes z-axis-animation {
-  from {transform: rotateZ(20deg)}
-  to {transform: rotateZ(-20deg)}
+  from {transform: rotateZ(10deg)}
+  to {transform: rotateZ(-10deg)}
     from {background-color: green;}
   to {background-color: pink;}
 }
